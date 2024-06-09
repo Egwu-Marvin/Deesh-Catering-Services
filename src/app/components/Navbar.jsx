@@ -39,7 +39,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <span className='bg-orange-700 flex justify-center py-2'></span>
+      <span className='bg-orange-700 flex justify-center py-4'></span>
     </div>
   )
 }
