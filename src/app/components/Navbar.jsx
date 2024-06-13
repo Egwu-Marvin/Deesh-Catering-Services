@@ -18,7 +18,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link href="/">Our Services</Link>
+            <Link href="/services">Our Services</Link>
           </li>
 
           <li>
@@ -39,7 +39,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <span className='bg-orange-700 flex justify-center py-4'></span>
+      <span className='bg-orange-700 flex justify-center py-5'></span>
     </div>
   )
 }

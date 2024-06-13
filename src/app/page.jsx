@@ -10,7 +10,7 @@ export default function Home() {
             Food Services</p>
 
             <p className='text-3xl font-bold text-orange-600 ml-[70%] -mb-[18%]'>
-          <img src="/img/spicies5.png" alt="flying spicy frying pan" width={170} height={200} />
+          <img src="/img/coral wedding.jpg" alt="flying spicy frying pan" width={130} height={200} className='ml-14'/>
             Decoration Services</p>
 
         <span className='flex justify-center'> 
