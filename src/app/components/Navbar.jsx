@@ -21,20 +21,20 @@ export default function Navbar() {
             <Link href="/services">Our Services</Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link href="/">Our Venues</Link>
+          </li> */}
+
+          <li>
+            <Link href="/gallery">Gallery</Link>
           </li>
 
           <li>
-            <Link href="/">Gallery</Link>
+            <Link href="/about">About Us</Link>
           </li>
 
           <li>
-            <Link href="/">About Us</Link>
-          </li>
-
-          <li>
-            <Link href="/">Talk With Us</Link>
+            <Link href="/contact">Talk With Us</Link>
           </li>
         </ul>
       </nav>

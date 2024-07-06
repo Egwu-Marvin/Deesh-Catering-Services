@@ -5,7 +5,7 @@ export default function layout({children}) {
   return (
     
     <div>
-      <nav className='flex justify-evenly -mt-8 text-xl font-bold text-white'>
+      <nav className='flex justify-evenly -mt-8 text-xl font-bold text-white animate-pulse'>
         <Link href='/services'>Event Planning</Link>
         <Link href='/services/groceries'>Groceries Shopping</Link>
         <Link href='/services/food'>Food Services</Link>

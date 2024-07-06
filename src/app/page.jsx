@@ -1,46 +1,84 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
-      <div>
-        
-      <p className='text-3xl font-bold text-orange-600 ml-[10%] -mb-[18%]'>
-            <img src="/img/flying noodles.png" alt="Noodles" width={150} height={200} />
-            Food Services</p>
+    <main className=' shadow-2xl shadow-orange-600 mt-7 -z-50'>
 
-            <p className='text-3xl font-bold text-orange-600 ml-[70%] -mb-[18%]'>
-          <img src="/img/coral wedding.jpg" alt="flying spicy frying pan" width={130} height={200} className='ml-14'/>
-            Decoration Services</p>
+<p className='flex justify-center  ml-60  font-bold text-6xl text-orange-700 font-serif z-50'>
+          We Assure You Only The Best In....
+        </p>
 
-        <span className='flex justify-center'> 
-
-        <img src="/img/chef2.png" 
-        alt="Chef"
-        height={1} width={400} className='ml-[2%] ' />
-        
+        <span className='flex  justify-center mb-[8%] -z-50 '>
+            <Image src='/img/bg4b.jpg' alt='bg banner' width={1400} height={200}/>
         </span>
 
-        <img src="/img/chef tools.png" 
-        alt="Chef Tools"
-        height={100} width={380} className='ml-[36.5%] -mt-[15%] ' />
+      <div>
 
-        <img src="/img/deesh-logo.png" 
-        alt="Deesh Logo"
-        height={100} width={225} className='ml-[42.5%] -mt-[11.5%] ' />
+        <div className='flex justify-center -mt-[68%]'>
 
-        <p className='text-3xl font-bold text-orange-600 ml-[16%] -mt-[20%]'>
-        <img src="/img/deesh-box.png" alt="Deesh Box" width={300} height={100} />
-          Event Planning</p>
+        <div className='flex -mr-[55%] z-10'>
+        <img src="/img/chef72.png" alt="chef" width={550} height={200}  />
 
-          <p className='text-3xl font-bold text-orange-600 ml-[63%] -mt-[20%]'>
-        <img src="/img/deesh-bag.png" alt="Deesh Bag" width={250} height={100} />
-          Groceries Shopping</p> 
+        <section className='pl-40 sm:pl-80 lg:pl-40 -ml-[78%] mt-[105%] '>
+        <h2 className='flex justify-center font-bold text-3xl text-orange-600'>Contact Us On</h2>
 
-        
-        {/* <p className='bg-orange-700 mx-[400px] flex justify-center font-extrabold text-white'>Catering Services</p> */}
+                <form action="" method="post" className='flex  text-sm'>              
+
                 
-      </div>
+                        <button type="submit" className='bg-yellow-500 rounded-md p-2 ml-4 text-white '><Link href="tel:+2348060043822"> Call/Whasapp </Link></button>
+                        
+
+                        <Link href='mailto:egwumarvin@gmail.com'>
+                        <button type="submit" className='bg-yellow-500 rounded-md p-2 ml-4 text-white '>MAIL</button>
+                        </Link>
+                </form>
+            
+        </section>
+        </div>
+
+        <div  className='flex justify-center -mt-[0%] -mr-[10%] ' >
+
+          <span className='z-30 mr-[20%] mt-[113%] text-yellow-500 font-extrabold font-serif text-xl border-hidden border-orange-600 border-8 hover:bold '>
+
+          <Link href= '/services'>
+          <img src="/img/two.jpg" alt="Event Center By Deesh" width={170} height={200} />
+
+            <p className='flex justify-center text-4xl shadow-lg shadow-red-600'>Event</p>
+            <p className='flex justify-center text-2xl shadow-lg shadow-red-600'>Planning</p>
+          </Link>
+          </span>
+          
+          <span className='z-20 mr-[20%] mt-[113%] text-orange-600 font-extrabold font-serif text-xl border-none  border-8'>
+          <Link href = '/services/groceries'>
+          <img src="/img/grocery2.png" alt="Food Stuffs By Deesh" width={250} height={200} />
+          <p className='flex justify-center text-3xl shadow-lg shadow-red-600'>Groceries</p>
+          <p className='flex justify-center text-2xl shadow-lg shadow-red-600'>Shopping</p>
+          </Link>
+          </span>
+          
+          <span className='flex justify-center z-30 -mr-[247%] mt-[120%] text-yellow-500 font-extrabold font-serif border-none border-orange-600 border-8'>
+          <Link href = '/services/food'>
+          <img src="/img/outfood.jpg" alt="Food In Chefing Deeshes" width={180} height={200}  />
+          <p className='flex justify-center text-3xl shadow-lg shadow-red-600'>Catering</p>
+          <p className='flex justify-center text-2xl shadow-lg shadow-red-600'>Services</p>
+          </Link>
+          </span>
+
+        </div>
+
+        <div className=' opacity-300 mt-[10%] '>
+        <video autoPlay loop muted alt='food vid' width={1250} height={20} >
+        <source src="/video/deesh-front4.mp4"/>
+        </video>
+        </div>
+
+        </div>
+          
+        
+          </div>
+
     </main>
   )
 }
