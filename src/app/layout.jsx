@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Audio/>
+        {/* <Audio/> */}
         <Navbar/>
 
         <div className="min-h-screen text-4xl">
