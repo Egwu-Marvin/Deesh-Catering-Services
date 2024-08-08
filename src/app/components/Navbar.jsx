@@ -1,18 +1,26 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navbar() {
+
+  const [open, setOpen] = useState(true)
+
+  function controlNav(){
+    setOpen(!open)
+  }
   return (
     <div>
-      <nav className='flex justify-between'>
-        <ul>
+      <nav className='flex justify-between '>
+        <ul className='flex items-center '>
           <li>
-            <img src="/img/deesh-logo.png" alt="deesh logo" width={100} height={10} className=' ml-20 mt-2' />
-            <span className='text-orange-700 ml-6 '>Experience The Taste Of Satisfaction</span>
+            <Image src="/img/deesh-logo.png" alt="deesh logo" width={100} height={10} className=' ml-20 mt-2' />
+            <span className='text-orange-700 ml-3 '>Experience The Taste Of Satisfaction</span>
           </li>
         </ul>
         
-        <ul className='flex justify-center gap-7 text-xl text-orange-700 font-bold mt-2 mr-3'>
+        <ul className={` md:flex ${open ? 'hidden' : 'flex flex-col'} flex justify-center gap-7 lg:text-xl md:text-sm text-orange-700 font-bold mt-2 mr-7`}>
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -39,7 +47,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <span className='bg-orange-700 flex justify-center py-5'></span>
+      <span className='bg-orange-700 flex justify-center py-3'></span>
     </div>
   )
 }
