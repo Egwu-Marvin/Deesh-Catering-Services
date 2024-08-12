@@ -47,7 +47,7 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <span className='bg-orange-700 flex justify-center py-3'></span>
+      <span className='bg-orange-700 flex justify-center py-[1.5%]'></span>
     </div>
   )
 }

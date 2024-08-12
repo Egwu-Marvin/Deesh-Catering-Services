@@ -128,15 +128,16 @@ export const services = [
 
 export default function OurServices() {
   return (
-      <div className='shadow-2xl shadow-orange-500'>
+      <main className='shadow-2xl shadow-orange-500'>
+
           <span className='flex justify-center -mb-[62.2%] mt-[7%]'>
-        <img src="/img/chefs-bg.jpg" alt="planning" width={1350} height={200} />
+        <Image src="/img/chefs-bg.jpg" alt="planning" width={1350} height={200} />
         </span>
 
-      <p className='flex justify-center pt-5 font-extrabold text-orange-700 text-4xl font-serif'>Some of the events we make easy and memorable for you</p>
+      <p className='flex justify-center pt-5 font-extrabold text-orange-700 lg:text-3xl md:text-2xl sm:text-xl text-[45%] font-serif'>Some of the events we make easy and memorable for you</p>
 
       
-    <div className='grid grid-cols-2 shadow-2xl shadow-orange-700 text-orange-600 font-extrabold '>
+    <div className='grid grid-cols-2 shadow-2xl shadow-orange-700 text-black font-extrabold text-sm text-center lg:w-[100%] md:w-[120%] sm:w-[160%] w-[200%] '>
 
       <span className='z-10'>
         
@@ -155,14 +156,14 @@ export default function OurServices() {
       <ServiceImage src='/img/SHUGA-2.jpg' alt='coperate meeting' svName='Coperate Event'/>
      
 
+      <div className='flex z-10 bg-black lg:w-[100%] md:w-[90%] sm:w-[70%] '>
+        <Image src="/img/chef6hide2.png" alt="hidden chef" svName='HiddenChef' width={700} height={200} className='lg:-mt-[80%] md:-mt-[95%] sm:-mt-[95%] lg:ml-[65%] md:ml-[71%] sm:ml-[112%] '/>
+      </div>
       </div>
 
-      <span>
-      <span className='flex z-10 '>
-        <img src="/img/chef6hide2.png" alt="hidden chef" svName='HiddenChef' width={700} height={200} className='-mt-[49.5%] ml-[26%] '/>
-      </span>
+      
 
-        </span>
-    </div>
+        
+    </main>
   )
 }
